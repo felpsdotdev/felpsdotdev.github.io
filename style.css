@@ -1,0 +1,11 @@
+* {
+    font-family: sans-serif;
+}
+
+.nav-bar {
+    list-style-type: none;
+}
+
+.nav-bar a {
+    text-decoration: none;
+}
