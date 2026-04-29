@@ -5,37 +5,45 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <title>kalashnikov.com</title>
 </head>
 
 <body>
-    <h1 id="apelido">kalashnikov</h1>
+    <header>
+        <h1 id="apelido">kalashnikov</h1>
+    </header>
 
     <nav>
-        <ul>
-            <li class="nav-bar"><a href="#inicio">Início</a></li>
-            <li class="nav-bar"><a href="#sobre">Sobre</a></li>
-            <li class="nav-bar"><a href="#habilidades">Habilidades</a></li>
-            <li class="nav-bar"><a href="#projetos">Projetos</a></li>
-            <li class="nav-bar"><a href="#contato">Contato</a></li>
+        <ul class="nav-bar">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
         </ul>
     </nav>
 
     <section id="inicio">
-        <h2>Felipe</h2>
-        <h2>Desenvolvedor Web</h2>
-        <p>
+        <p>Olá, eu sou</p>
+        <h1 id="nome">Felipe</h1>
+        <h2 id="info">Desenvolvedor Web</h2>
+        <p class="desc">
             Desenvolvo soluções modernas e responsivas
             para web, com foco em performance e
             experiência do usuário.
         </p>
 
         <button>Entrar em Contato</button>
+
+        <div>
+            
+        </div>
     </section>
 
     <section id="sobre">
-        <h2>Sobre mim</h2>
-        <p>
+        <h2 class="info">Sobre mim</h2>
+        <p class="desc">
             Tenho 18 anos e atualmente curso o ensino médio.
             Sou um estudante de programação focado em construir uma carreira como desenvolvedor Full Stack.
             Estou dando meus primeiros passos na área, sempre buscando aprender e evoluir a cada dia.
@@ -51,8 +59,8 @@
     </section>
 
     <section id="habilidades">
-        <h2>Minhas Habilidades</h2>
-        <p>
+        <h2 class="info">Minhas Habilidades</h2>
+        <p class="desc">
             • HTML5 para estruturação de páginas web.
             • CSS3 para estilização e criação de layouts responsivos.
             • Git para controle de versões.
@@ -63,8 +71,8 @@
     </section>
 
     <section id="projetos">
-        <h2>Meus Projetos</h2>
-        <p>
+        <h2 class="info">Meus Projetos</h2>
+        <p class="desc">
             Atualmente estou desenvolvendo projetos pessoais com foco em prática e evolução constante.
             Cada novo projeto representa uma oportunidade de aplicar conhecimentos,
             aprender novas técnicas e aprimorar minhas habilidades como desenvolvedor.
@@ -74,9 +82,9 @@
     </section>
 
     <section id="contato">
-        <h2>Contato</h2>
+        <h2 class="info">Contato</h2>
 
-        <p>
+        <p class="desc">
             Vamos conversar?
             Entre em contato comigo através das redes
             abaixo ou envie um e-mail
@@ -89,7 +97,7 @@
         </p>
     </section>
 
-    <script> src="script.js"</script>
+    <script src="script.js"></script>
 </body>
 
 </html>

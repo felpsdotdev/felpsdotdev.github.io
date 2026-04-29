@@ -1,11 +1,62 @@
 * {
-    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 2rem;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    padding: 4rem 2rem;
+    margin: 0 2.5rem;
+    max-width: 28rem;
+}
+
+.info {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.desc {
+    color: gray;
+    font-size: 1rem;
+    line-height: 2.0;
+
+}
+
+button {
+    background-color: rgb(101, 20, 177);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nav-bar img {
+    margin: 0%;
+    width: 50px;
+    height: 50px;
 }
 
 .nav-bar {
     list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .nav-bar a {
+    color: #fff;
     text-decoration: none;
 }
