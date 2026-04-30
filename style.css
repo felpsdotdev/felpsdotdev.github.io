@@ -5,58 +5,94 @@
 }
 
 header {
-    padding: 2rem;
+    background-color: #16161b;
+    font-family: 'Poppins', sans-serif;
+    padding: 5rem;
 }
 
 body {
-    background-color: #000000;
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-}
-
-section {
-    padding: 4rem 2rem;
-    margin: 0 2.5rem;
-    max-width: 28rem;
-}
-
-.info {
-    color: #fff;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.desc {
-    color: gray;
-    font-size: 1rem;
-    line-height: 2.0;
-
+    background-color: #16161b;
+    color: #E5E7EB;
 }
 
 button {
-    background-color: rgb(101, 20, 177);
-    color: white;
-    font-family: 'Poppins', sans-serif;
+    padding: 0.7rem 1.2rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
     border: none;
-    padding: 0.5rem 1rem;
+    background-color: #374151;
+    color: #afb2b6;
     cursor: pointer;
-    border-radius: 5px;
+    transition: 0.2s;
+    margin-top: 1.5rem;
 }
 
-.nav-bar img {
-    margin: 0%;
-    width: 50px;
-    height: 50px;
+button:hover {
+    background-color: #333335;
+}
+
+#apelido-header {
+    font-size: 3rem;
+}
+
+#info-header {
+    font-size: medium;
+}
+
+#desc-header {
+    color: #4B5563;
+    font-size: small;
+    line-height: 1.6;
+    width: 24rem;
 }
 
 .nav-bar {
+    padding-left: 5rem;
     list-style-type: none;
-    display: flex;
-    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
     gap: 2rem;
+    display: flex;
 }
 
 .nav-bar a {
-    color: #fff;
+    color: #D1D5DB;
     text-decoration: none;
+}
+
+
+.nav-bar a:hover {
+    color: #333335;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 12rem;
+    padding-left: 5rem;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 2.5rem;
+}
+
+.desc-text {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #4B5563;
+    font-size: small;
+    padding-bottom: 1rem;
+    width: 600px;
+}
+
+#img-dev {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 1.5rem;
 }
