@@ -1,98 +1,240 @@
+/* CSS Variables for consistency */
+:root {
+    --bg-color: #000000;
+    --text-color: #ffffff;
+    --accent-color: #333335;
+    --hover-color: #555555;
+    --font-family: sans-serif;
+    --border-radius: 0.5rem;
+}
+
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header {
-    background-color: #16161b;
-    font-family: 'Poppins', sans-serif;
-    padding: 5rem;
-}
-
+/* Body */
 body {
-    background-color: #16161b;
-    color: #E5E7EB;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    line-height: 1.6;
 }
 
-button {
-    padding: 0.7rem 1.2rem;
-    border-radius: 0.5rem;
-    font-weight: bold;
-    border: none;
-    background-color: #374151;
-    color: #afb2b6;
-    cursor: pointer;
-    transition: 0.2s;
-    margin-top: 1.5rem;
-}
-
-button:hover {
-    background-color: #333335;
+/* Header */
+header {
+    padding: 5rem;
 }
 
 #apelido-header {
     font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
 #info-header {
-    font-size: medium;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
 }
 
 #desc-header {
-    color: #4B5563;
-    font-size: small;
+    color: var(--accent-color);
+    font-size: 0.9rem;
     line-height: 1.6;
-    width: 24rem;
+    max-width: 24rem;
+    margin-bottom: 1.5rem;
 }
 
+/* Button */
+button {
+    padding: 0.7rem 1.2rem;
+    border-radius: var(--border-radius);
+    font-weight: bold;
+    border: none;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 1.5rem;
+}
+
+button:hover {
+    background-color: var(--hover-color);
+}
+
+button:focus {
+    outline: 2px solid var(--text-color);
+    outline-offset: 2px;
+}
+
+/* Navigation */
 .nav-bar {
     padding-left: 5rem;
     list-style-type: none;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-family);
     font-weight: bold;
-    gap: 2rem;
     display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
 }
 
 .nav-bar a {
     color: #D1D5DB;
     text-decoration: none;
+    transition: color 0.2s ease;
 }
-
 
 .nav-bar a:hover {
-    color: #333335;
+    color: var(--accent-color);
 }
 
+.nav-bar a:focus {
+    outline: 2px solid var(--text-color);
+    outline-offset: 2px;
+}
+
+/* Main Container */
 .container {
     display: flex;
     align-items: flex-start;
     gap: 12rem;
     padding-left: 5rem;
+    padding-right: 5rem;
 }
 
+/* Title */
 .title {
     font-size: 1.5rem;
     font-weight: bold;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-family);
     padding-left: 5rem;
     padding-top: 5rem;
     padding-bottom: 2.5rem;
 }
 
+/* Description Text */
 .desc-text {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-family);
     line-height: 1.6;
-    color: #4B5563;
-    font-size: small;
+    color: var(--accent-color);
+    font-size: 0.9rem;
     padding-bottom: 1rem;
-    width: 600px;
+    padding-left: 5rem;
+    max-width: 600px;
 }
 
+/* Image */
 #img-dev {
     width: 15rem;
     height: 15rem;
     object-fit: cover;
     border-radius: 1.5rem;
+}
+
+/* Skills Box */
+.box-skill {
+    display: flex;
+    padding-left: 5rem;
+    gap: 2rem;
+}
+
+.skill {
+    width: 50px;
+    height: 50px;
+    background-color: #0e1114;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill img {
+    width: 32px;
+    height: 32px;
+}
+
+.box-project {
+    display: flex;
+    padding-left: 5rem;
+    gap: 2rem;
+}
+
+.box-project img {
+    width: 64px;
+    height: 64px;
+}
+
+.projects {
+    width: 384px;
+    height: 256px;
+    background-color: #0e1114;
+    border-radius: 0.5rem;
+    font-family: sans-serif;
+    font-size: 0.7rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 2rem;
+    }
+
+    #apelido-header {
+        font-size: 2rem;
+    }
+
+    #desc-header {
+        max-width: 100%;
+    }
+
+    .nav-bar {
+        padding-left: 2rem;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .title {
+        padding-left: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .desc-text {
+        padding-left: 2rem;
+        max-width: 100%;
+    }
+
+    #img-dev {
+        width: 10rem;
+        height: 10rem;
+        align-self: center;
+    }
+
+    .box-skill {
+        padding-left: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .box-project {
+        padding-left: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .projects {
+        width: 100%;
+        max-width: 384px;
+    }
 }
