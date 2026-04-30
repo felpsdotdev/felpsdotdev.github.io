@@ -15,12 +15,47 @@
     box-sizing: border-box;
 }
 
-/* Body */
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.28) rgba(255, 255, 255, 0.08);
+}
+
 body {
     background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #2d2d2d 100%);
     color: var(--text-color);
     font-family: var(--font-family);
     line-height: 1.6;
+    min-height: 100vh;
+    padding-bottom: 3rem;
+}
+
+#contato {
+    padding-bottom: 3rem;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 999px;
+    transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.35);
+    transform: scaleX(1.1);
+}
+
+body::-webkit-scrollbar-corner {
+    background: transparent;
 }
 
 /* Header */
@@ -89,7 +124,7 @@ nav {
 }
 
 .nav-bar a:hover {
-    color: var(--accent-color);
+    color:var(--hover-color)
 }
 
 .nav-bar a:focus {
@@ -113,7 +148,7 @@ nav {
     font-family: var(--font-family);
     padding-left: 5rem;
     padding-top: 5rem;
-    padding-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
 }
 
 /* Description Text */
@@ -222,8 +257,8 @@ nav {
 
 .project-image {
     flex-shrink: 0;
-    width: 400px;
-    height: 250px;
+    width: 220px;
+    height: 340px;
     border-radius: 0.3rem;
     overflow: hidden;
 }
@@ -236,12 +271,13 @@ nav {
 
 .project-content {
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
     align-items: flex-start;
     background-color: #0e1114;
     border-radius: 0.5rem;
-    padding: 2rem;
-    max-width: 900px;
+    padding: 1rem;
+    width: fit-content;
+    max-width: 520px;
     margin-left: 5rem;
 }
 
@@ -250,6 +286,7 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     flex: 1;
+    min-width: 0;
 }
 
 .project-title {
@@ -289,7 +326,10 @@ nav {
 .contact-container {
     display: flex;
     padding-left: 5rem;
+    padding-right: 5rem;
     gap: 2rem;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .contact-item {
@@ -305,6 +345,7 @@ nav {
 .contact-item img {
     width: 32px;
     height: 32px;
+    display: block;
 }
 
 /* Responsive Design */
