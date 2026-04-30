@@ -9,6 +9,13 @@
 </head>
 
 <body>
+    <nav>
+        <ul class="nav-bar">
+            <li class="active"><a href="#sobre">SOBRE</a></li>
+            <li><a href="#habilidades">HABILIDADES</a></li>
+            <li><a href="#projetos">PROJETOS</a></li>
+        </ul>
+    </nav>
     <header>
         <h1 id="apelido-header">kalashnikov</h1>
         <h2 id="info-header">Desenvolvedor Full Stack</h2>
@@ -18,20 +25,15 @@
             com atenção à performance e experiência do usuário.
         </p>
 
-        <button>Entrar em Contato</button>
+        <button href="#contato">Entrar em Contato</button>
     </header>
-    <nav>
-        <ul class="nav-bar">
-            <li class="active"><a href="#sobre">SOBRE</a></li>
-            <li><a href="#habilidades">HABILIDADES</a></li>
-            <li><a href="#projetos">PROJETOS</a></li>
-        </ul>
-    </nav>
 
     <section id="sobre">
         <h2 class="title">SOBRE MIM</h2>
 
-        <p class="desc-text">
+        <div class="about-container">
+            <div class="about-text">
+                <p class="desc-text">
             Tenho 18 anos e atualmente estou cursando o ensino médio, enquanto construo minha trajetória na
             área de
             desenvolvimento com foco em me tornar um desenvolvedor Full Stack. Já não me considero mais
@@ -99,7 +101,29 @@
             resultados
             cada
             vez melhores.
-        </p>
+                </p>
+            </div>
+
+            <div class="info-card">
+                <img src="assets/eu.jpg" alt="Felipe" class="profile-photo">
+                
+                <div class="info-item">
+                    <img src="assets/user.png" alt="user" class="info-icon">
+                    <span class="info-label">Nome: Felipe</span>
+                </div>
+
+                <div class="info-item">
+                    <img src="assets/calendar.png" alt="calendar" class="info-icon">
+                    <span class="info-label">Idade: 18 anos</span>
+                </div>
+
+                <div class="info-item">
+                    <img src="assets/geo.png" alt="geo" class="info-icon">
+                    <span class="info-label">Localização: Brasil</span>
+                </div>
+                
+            </div>
+        </div>
     </section>
 
     <section id="habilidades">
@@ -131,15 +155,50 @@
     <section id="projetos">
         <h2 class="title">PROJETOS</h2>
 
-        <div class="box-project">
-            <img src="assets/code.jpg" alt="img-code">
-
-            <div class="projects">
-                <h1>Projeto:</h1>
-                <h2>Descrição:</h2>
-                <h3>Tecnologias: HTML, CSS e JS</h3>
-                <button>GitHub</button>
+        <div class="project-content">
+            <div class="project-image">
+                <img src="assets/code.jpg" alt="Portfólio Pessoal">
             </div>
+
+            <div class="project-info">
+                <h3 class="project-title">Portfólio Pessoal</h3>
+                <p class="project-description">
+                    Um portfólio pessoal desenvolvido por kalashnikov, criado com o objetivo de apresentar projetos e habilidades no desenvolvimento web. Este projeto foi desenvolvido utilizando HTML, CSS e JavaScript, demonstrando conhecimentos em desenvolvimento front-end.
+                </p>
+                <a href="https://github.com/kalashnikovus/html-css" target="_blank" class="btn-project">Ver Projeto</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2 class="title">CONTATO</h2>
+        <p class="desc-text">
+            Vamos conversar?
+            Entre em contato comigo através das redes
+            abaixo ou envie um e-mail. Estou aberto a 
+            oportunidades de trabalho!
+        </p>
+
+        <div class="contact-container">
+
+            <div class="contact-item">
+                <a href="https://github.com/kalashnikovus/html-css" target="_blank">
+                    <img src="assets/github.png" alt="img-github" class="contact-icon">
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <a href="https://discord.gg/DqHTAau3Bn" target="_blank">
+                    <img src="assets/discord.png" alt="img-discord" class="contact-icon">
+                </a>
+            </div>
+
+            <div class="contact-item">
+                <a href="mailto:emanuelfelipe1111@gmail.com?subject=Contato pelo Portfólio&body=Olá, vim pelo seu site!" target="_blank">
+                    <img src="assets/email.png" alt="img-email" class="contact-icon">
+                </a>
+            </div>
+
         </div>
     </section>
 

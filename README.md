@@ -1,30 +1,22 @@
-# 📁 Projeto HTML-CSS
+# Projeto Portfólio Web
 
 Este projeto faz parte do meu processo de aprendizado em desenvolvimento web.
 
-Atualmente estou construindo meu próprio site de portfólio utilizando **HTML e CSS**, com foco em entender melhor a estrutura, organização e estilização de páginas web.
+Atualmente estou desenvolvendo meu próprio site de portfólio utilizando HTML e CSS, com foco em entender melhor a estrutura, organização e estilização de páginas web.
 
-## 🚀 Objetivo
+## Objetivo
 
-- Praticar HTML (estrutura de páginas)
-- Aprender CSS (estilização e layout)
-- Evoluir para JavaScript em breve
+* Praticar a construção de páginas com HTML
+* Aprender e aplicar estilos com CSS
+* Desenvolver noções de layout e organização visual
+* Evoluir para JavaScript em breve
 
-## 📚 Sobre
+## Sobre o Projeto
 
-Ainda estou em fase de aprendizado, então este projeto está em constante evolução.  
-A ideia é ir melhorando o site aos poucos conforme adquiro mais conhecimento.
+A proposta desse site é um portfólio completo, onde poderei apresentar meus projetos, habilidades e evolução como desenvolvedor.
 
-## 🛠️ Tecnologias
+## Tecnologias Utilizadas
 
-- HTML5  
-- CSS3  
-- (Em breve) JavaScript  
-
-## 📌 Status
-
-🚧 Em desenvolvimento
-
----
-
-Se quiser acompanhar minha evolução ou dar sugestões, fique à vontade!
+* HTML5
+* CSS3
+* JavaScript
