@@ -9,7 +9,7 @@ Atualmente estou desenvolvendo meu próprio site de portfólio utilizando HTML e
 * Praticar a construção de páginas com HTML
 * Aprender e aplicar estilos com CSS
 * Desenvolver noções de layout e organização visual
-* Evoluir para JavaScript em breve
+* Evoluir o JavaScript
 
 ## Sobre o Projeto
 
